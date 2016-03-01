@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyText
+  driver: MyText
+  liter: 9.99
+  weight: 9.99
+  distance: 9.99
+  cement: MyText
+  destination: MyText
+
+two:
+  date: MyText
+  driver: MyText
+  liter: 9.99
+  weight: 9.99
+  distance: 9.99
+  cement: MyText
+  destination: MyText

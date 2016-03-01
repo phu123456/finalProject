@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  <strong>ทะเบียนรถ:</strong>
+  <%= @truck.plate %>
+</h3>
+<br>
+<table id="text-center" class="table table-bordered">
+  <thead>
+    <tr>
+      <th>วันที่</th>
+      <th>พนักงานขับรถ</th>
+      <th>น้ำมัน/ลิตร</th>
+      <th>จำนวนตัน</th>
+      <th>ระยะทาง</th>
+      <th>ชนิดปูน</th>
+      <th>สถานที่ส่งของ</th>
+    </tr>
+  </thead>
+
+<% @trips.each do |trip| %>
+  <tr>
+    <td><%= trip.date %></td>
+    <td><%= trip.driver %></td>
+    <td><%= trip.liter %></td>
+    <td><%= trip.weight %></td>
+    <td><%= trip.distance %></td>
+    <td><%= trip.cement %></td>
+    <td><%= trip.destination %></td>
+
+
+  </tr>
+<% end %>
+
+</table>
+
+
+<br>
+<%= link_to 'create', new_truck_trip_path(@truck) %> |
+<%= link_to 'Edit', edit_truck_path(@truck) %> |
+<%= link_to 'Back', trucks_path %>

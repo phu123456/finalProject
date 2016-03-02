@@ -11,6 +11,7 @@ class TrucksController < ApplicationController
   # GET /trucks/1.json
   def show
     @trips = Trip.where(truck_id: @truck.id)
+    # @trips = Trip.where(truck_id: @truck.id).limit(10)
   end
 
   # GET /trucks/new

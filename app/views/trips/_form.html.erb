@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :"วันที่" %><br>
     <%= f.text_field :date %>
   </div>
@@ -42,4 +42,44 @@
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+<% end %> -->
+
+
+<form class="new_trip" id="new_trip" action="/trucks/6/trips" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="e6ZnbJX7kPU95FJ8smYshwu9aT9514p4WPgKFA8whuMMmfEv+Qq8MwifGRioWGjQxzPmsko2CtoDb3heI74XFQ==">
+
+  <div class="field">
+    <label for="trip_วันที่">วันที่</label><br>
+    <input type="text" name="trip[date]" id="trip_date">
+  </div>
+  <div class="field">
+    <label for="trip_พนักงานขับรถ">พนักงานขับรถ</label><br>
+    <input type="text" name="trip[driver]" id="trip_driver">
+  </div>
+  <div class="field">
+    <label for="trip_น้ำมัน(ลิตร)">น้ำมัน(ลิตร)</label><br>
+    <input type="text" name="trip[liter]" id="trip_liter">
+  </div>
+  <div class="field">
+    <label for="trip_น้ำหนัก(ตัน)">น้ำหนัก(ตัน)</label><br>
+    <input type="text" name="trip[weight]" id="trip_weight">
+  </div>
+  <div class="field">
+    <label for="trip_ระยะทาง">ระยะทาง</label><br>
+    <input type="text" name="trip[distance]" id="trip_distance">
+  </div>
+  <div class="field">
+    <label for="trip_ชนิดปูน">ชนิดปูน</label><br>
+    <input type="text" name="trip[cement]" id="trip_cement">
+  </div>
+  <div class="field">
+    <label for="trip_สถานที่ส่งของ">สถานที่ส่งของ</label><br>
+    <input type="text" name="trip[destination]" id="trip_destination">
+  </div>
+  <div class="actions">
+    <input type="submit" name="commit" value="Create Trip">
+  </div>
+</form>
+
+<a href="/trucks/6">Back</a>
+
+    </div>

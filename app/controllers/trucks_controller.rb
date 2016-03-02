@@ -4,7 +4,7 @@ class TrucksController < ApplicationController
   # GET /trucks
   # GET /trucks.json
   def index
-    @trucks = Truck.all
+    @trucks = Truck.search(params[:search])
   end
 
   # GET /trucks/1

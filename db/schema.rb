@@ -32,6 +32,12 @@ ActiveRecord::Schema.define(version: 20160301082949) do
     t.datetime "updated_at", null: false
   end
 
+  # create_table "maintainance", force: :cascade do |t|
+  #   t.text     "plate"
+  #   t.datetime "created_at", null: false
+  #   t.datetime "updated_at", null: false
+  # end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
